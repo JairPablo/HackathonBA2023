@@ -18,9 +18,9 @@ menu.innerHTML = `
 
     <ul class="header-links">
         <li class="header-list"><a ${select.includes("index.html") ? active : ""} href='${select.includes("index.html") ? "index.html" : "../index.html"}'>Inicio</a></li>
-        <li class="header-list"><a ${select.includes("equipo.html") ? active : ""} href='${select.includes("index.html") ? "/pages/equipo.html" : "equipo.html"}'>Equipo</a></li>
-        <li class="header-list"><a ${select.includes("informacionUtil.html") ? active : ""} href='${select.includes("index.html") ? "/pages/informacionUtil.html" : "informacionUtil.html"}'>Informacion Util</a></li>
-        <li class="header-list"><a ${select.includes("contacto.html") ? active : ""} href='${select.includes("index.html") ? "/pages/contacto.html" : "contacto.html"}'>Contacto</a></li>
+        <li class="header-list"><a ${select.includes("equipo.html") ? active : ""} href='${select.includes("index.html") ? "pages/equipo.html" : "equipo.html"}'>Equipo</a></li>
+        <li class="header-list"><a ${select.includes("informacionUtil.html") ? active : ""} href='${select.includes("index.html") ? "pages/informacionUtil.html" : "informacionUtil.html"}'>Informacion Util</a></li>
+        <li class="header-list"><a ${select.includes("contacto.html") ? active : ""} href='${select.includes("index.html") ? "pages/contacto.html" : "contacto.html"}'>Contacto</a></li>
     </ul>
 </section>
 `
