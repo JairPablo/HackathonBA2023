@@ -17,8 +17,6 @@ body {
 
 
 .grid-container {
-    /* background: radial-gradient(rgba(36, 12, 3, 0.87), rgba(31, 10, 1, 0.87)), url(../img/maxresdefault.png) no-repeat fixed center center;
-    background-size: cover; */
     display: grid;
     grid-template:
         "header" 50px
@@ -109,35 +107,12 @@ body {
 #contenido{
     grid-area: contenido;
     padding: 3rem;
-    display: grid;
-    gap: 1rem;
-    grid-template: 
-    "titulo titulo" 10rem
-    "tarjeta1 tarjeta2" auto
-    "tarjeta3 tarjeta4" auto /
-        50% 50%;
-    place-items: center;
 }
-/* ----TITULOS---- */
-/* .titulo-inicio{
-    text-align: center;
-}
-.titulos{
-    font-size: 1.5rem;
-}
-.subtitulos{
-    font-size: 1.3rem;
-}
-
-.subtitulo-h4{
-    font-style: italic;
-    font-weight: 100;
-} */
 
 /* ---- CONTENIDO DE LA PAGINA----- */
 
 #titulo{
-    grid-area: titulo;
+    /* grid-area: titulo; */
     text-align: center;
     font-size: 3rem;
     
@@ -145,20 +120,12 @@ body {
 #titulo h1{
     text-shadow: 0px 45px 20px rgba(163, 162, 162, 0.726);
 }
-
-#tarjeta1{
-    grid-area: tarjeta1;
-}
-#tarjeta2{
-    grid-area: tarjeta2;
-}
-#tarjeta3{
-    grid-area: tarjeta3;
-    align-self: stretch;
-    justify-content: stretch;
-}
-#tarjeta4{
-    grid-area: tarjeta4;
+#tarjetas-equipo{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1rem;
+    place-items: center;
+    margin-top: 4rem;
 }
 .tarjetas{
     background-color: #ffffff;
@@ -170,7 +137,7 @@ body {
     padding: 2rem;
     box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.589);
     min-height: 100%;
-    width: 50%;
+    width: 30rem;
     gap: 1rem;
 }
 
@@ -273,10 +240,5 @@ body {
         left: 0;
         transition: all .25s;
     }
-    
-    #contenido{
-        margin-top: 4rem;
-    }
-
 
 }

@@ -17,7 +17,7 @@ body {
 
 
 .grid-container {
-    background: radial-gradient(rgba(36, 12, 3, 0.87), rgba(31, 10, 1, 0.87)), url(../img/maxresdefault.png) no-repeat fixed center center;
+    background: radial-gradient(rgba(36, 12, 3, 0.87), rgba(31, 10, 1, 0.87)), url(../img/fondo-de-ecobici.png) no-repeat fixed center center;
     background-size: cover;
     display: grid;
     grid-template:
@@ -109,7 +109,6 @@ body {
     grid-area: contenido;
     width: 50%;
     margin: 0 auto;
-    margin-top: 3rem;
 }
 #titulo{
     display: flex;
