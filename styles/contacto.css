@@ -107,15 +107,14 @@ body {
 /*--------------------------CUERPO PRINCIPAL--------------------------*/
 .section {
     grid-area: contenido;
-    width: 50%;
     margin: 0 auto;
+    width: 100%;
 }
 #titulo{
-    display: flex;
-    justify-content: center;
     color: rgb(207, 204, 204);
     font-size: 2rem;
     padding: 2em;
+    text-align: center;
 }
 #formulario{
     display: flex;
@@ -237,9 +236,7 @@ form {
 /*--------------------------FOOTER--------------------------*/
 .footer {
     grid-area: footer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
     width: 100%;
     position: fixed;
     bottom: 0;
@@ -247,17 +244,10 @@ form {
     color: white;
 }
 
-.footer_links {
-    display: flex;
-    list-style-type: none;
-}
-
 /*--------------------------MEDIA QUERIES--------------------------*/
 
 @media screen and (max-width: 660px) {
     .grid-container {
-        /* background: radial-gradient(rgba(36, 12, 3, 0.87), rgba(31, 10, 1, 0.87)), url(../img/maxresdefault.png) no-repeat fixed center center;
-        background-size: cover; */
         display: grid;
         grid-template:
             "header" 70px
@@ -285,7 +275,7 @@ form {
     .nav-list ul{
         display: block;
         position: fixed;
-        top: 4rem;
+        top: 3.53rem;
         left: -100%;
         background: linear-gradient(90deg, #f79b50, #ff5100);
         width: 100%;
@@ -309,6 +299,27 @@ form {
     .contenido{
         margin-top: 2rem;
     }
+
+}
+@media screen and (max-width: 425px) {
+    form {
+        width: 80%;
+    }
+    label {
+        width: 80%;
+    }
+    input,
+  textarea {
+        width: 80%;
+  }
+  .button {
+    padding-left: 10px;
+  }
+  
+  button {
+    margin-left: 0.5em;
+  }
+
 
 
 }

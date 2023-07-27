@@ -127,7 +127,15 @@ body {
     align-items: center;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     gap: 1rem;
-
+    animation: desplazo-izq .8s ease;
+}
+@keyframes desplazo-izq {
+    from {
+        transform: translateX(-200%);
+    }
+    to {
+        transform: translateX(0);
+    }
 }
 
 #img-entrada {
@@ -178,6 +186,7 @@ body {
 .titulo-inicio {
     text-align: center;
     margin-top: 5rem;
+    line-height: 1.5;
 }
 
 .titulos {
@@ -203,9 +212,10 @@ body {
     padding: 2em;
     background: rgba(128, 128, 128, 0.11);
     box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.226);
-
-
+    
 }
+
+
 
 .registro {
     display: flex;
@@ -214,12 +224,10 @@ body {
     justify-content: center;
     text-align: left;
     gap: .5rem;
+    line-height: 1.5;
 }
-.registro p{
-    font-size: 1.2rem;
-}
+
 .registro ul li{
-    font-size: 1.2rem;
     margin-bottom: .5rem;
 }
 .img-registro {
@@ -321,21 +329,13 @@ body {
 /*--------------------------FOOTER--------------------------*/
 .footer {
     grid-area: footer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
     width: 100%;
     position: fixed;
     bottom: 0;
     background: rgb(31, 31, 31);
     color: white;
 }
-
-.footer_links {
-    display: flex;
-    list-style-type: none;
-}
-
 /*--------------------------MEDIA QUERIES--------------------------*/
 
 @media screen and (max-width: 820px) {
