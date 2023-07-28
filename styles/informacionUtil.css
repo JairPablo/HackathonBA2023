@@ -274,7 +274,8 @@ ul li {
     #graficos-analisis img {
         width: 23rem;
     }
-    #img-destinoMasElegido img{
+    #img-destinoMasElegido img,
+    #img-destinoMasElegido2 img{
         width: 25rem;
     }
 
@@ -286,12 +287,14 @@ ul li {
         width: 15rem;
     }
 
-    #img-destinoMasElegido img{
+    #img-destinoMasElegido img,
+    #img-destinoMasElegido2 img{
         width: 20rem;
     }
 }
 @media screen and (max-width: 355px){
-    #img-destinoMasElegido img{
+    #img-destinoMasElegido img,
+    #img-destinoMasElegido2 img{
         width: 18rem;
     }
 }
