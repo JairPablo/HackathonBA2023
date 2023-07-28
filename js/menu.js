@@ -22,6 +22,7 @@ menu.innerHTML = `
         <li class="header-list"><a ${select.includes("equipo.html") ? active : ""} href='${select.includes("index.html") ? "pages/equipo.html" : "equipo.html"}'>Equipo</a></li>
         <li class="header-list"><a ${select.includes("contacto.html") ? active : ""} href='${select.includes("index.html") ? "pages/contacto.html" : "contacto.html"}'>Contacto</a></li>
     </ul>
+    
 </section>
 `
 
