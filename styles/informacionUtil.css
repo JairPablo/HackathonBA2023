@@ -180,6 +180,10 @@ ul li {
     align-content: center;
     width: 100%;
 }
+.txt-tachado{
+    text-decoration-line: line-through;
+}
+
 /*--------------------------FOOTER--------------------------*/
 .footer {
     grid-area: footer;
